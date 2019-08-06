@@ -1,0 +1,123 @@
+\documentclass[10.5pt]{article}
+
+% Spanish characters
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% French display
+\usepackage[english,spanish]{babel}
+
+\usepackage{lastpage}
+%Esto me permite usar el comando "\pageref{LastPage}" en el footer.
+\renewcommand{\baselinestretch}{1.6}
+% Esto controla el interlineado o espaciado!!!
+\usepackage{color}
+%\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\red}[1]{{\color{black} #1}}
+
+%The following packages are relics, but I don't want to remove them just in case:
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{cite}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\usepackage{multicol}
+\usepackage{color}
+%\usepackage{minipage}
+
+\usepackage{graphicx} % Required for including images
+\graphicspath{{figures/}} % Location of the graphics files
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+
+%The defaults margins are huge, so I'll customize it:
+\oddsidemargin  -0.0 in
+\textwidth 6.5 in
+\textheight 8.7 in
+\addtolength{\voffset}{-1cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%% HEADER AND FOOTER %%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyhead[L]{Introducción}
+\fancyhead[R]{Jos\'{e} David Ruiz \'{A}lvarez}
+\fancyhead[C]{}
+\fancyfoot[C]{\thepage /\pageref{LastPage}}
+
+\newlength\FHoffset
+\setlength\FHoffset{0cm}
+
+\addtolength\headwidth{2\FHoffset}
+\fancyheadoffset{\FHoffset}
+
+\newlength\FHleft
+\newlength\FHright
+
+\setlength\FHleft{1cm}
+\setlength\FHright{1cm}
+
+\thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%% HEADER AND FOOTER %%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\noindent
+\begin{minipage}[b]{0.75\linewidth}
+{\LARGE\bf Introducción}\\ %[1mm]
+\large{Jos\'{e} David Ruiz \'{A}lvarez} \\
+\small{\href{mailto:josed.ruiz@udea.edu.co}{josed.ruiz@udea.edu.co}} \\ %[3mm]
+\normalsize{Instituto de Física, Facultad de Ciencias Exactas y Naturales} \\%[3mm]
+\normalsize{\bf Universidad de Antioquia} \\[8mm]
+\today %\\[4mm]
+\end{minipage}%
+
+\section{Contenido}
+
+Dos grandes vertientes en t\'{e}rminos de problemas f\'{i}sicos: 
+\begin{itemize}
+\item Lenguajes de programación, paquetes, entre otros.
+\item Solución numérica de ecuaciones diferenciales
+\item Técnicas de Monte Carlo
+\item Análisis estadístico de datos
+\end{itemize}
+
+\section{Evaluación}
+
+\begin{itemize}
+\item 30\% seguimiento y tareas: Problemas cortos y ejercicios de programación. (Dividido en dos seguimientos del 15\%)
+\item 20\% proyecto: Problema a resolver en grupos.
+\item 50\%, dos parciales del 25\%. 
+\end{itemize}
+
+\begin{itemize}
+\item Seguimiento 1: Agosto 6 a Septimembre 19.
+\item Taller preparatorio Parcial 1: Septiembre 24.
+\item Parcial 1: Septiembre 26.
+\item Seguimiento 2: Octubre 1 a Noviembre 5.
+\item Taller preparatorio Parcial 2: Noviembre 7.
+\item Parcial 2: Noviembre 12.
+\item Proyecto: Noviembre 14 al 26.
+\item Presentación proyectos: Noviembre 28.
+\end{itemize}
+
+\section{Evaluación diagnóstica}
+
+\url{https://docs.google.com/forms/d/e/1FAIpQLSf7Bq8m7FjbkGYRuGSj__oLrZ8t9UurSi0MS6OqpUYhNz2zwA/viewform?usp=sf_link}
+
+\section{Repositorio del curso}
+
+\url{https://github.com/jotadram6/CUFICO_2019_2}
+
+\end{document}
+
+%%% Local Variables:
+%%%   mode: latex
+%%%   mode: flyspell
+%%%   ispell-local-dictionary: "spanish"
+%%% End:
