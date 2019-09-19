@@ -61,10 +61,10 @@ int main()
 		x = x0; y_RK6 = y0;
 		cout << x <<","<< y_RK6<< endl;
 		h = (xf-x0)/NumPuntos[j];
-		for (float i = x0+h; i < xf; i=i+h)
+		for (float i = 1; i < NumPuntos[j]; i++)
 		{
-			x = i;
 			y_RK6 = RK6(x,y_RK6,h, ODE);
+			x += h;
 			cout << x <<","<< y_RK6<< endl;
 			
 		}
